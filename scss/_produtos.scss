@@ -9,7 +9,7 @@
 
 .produto_item h2 {
   color: $white;
-  font-size: 36px;
+  @include tipo-1(36);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -44,8 +44,7 @@
 
 .produto_info p {
   color: $white;
-  font-size: 18px;
-  line-height: 25px;
+  @include tipo-1(18);
   height: 180px;
   padding: 30px 40px;
 }
@@ -53,7 +52,7 @@
 .produto_info ul li {
   background: $amarelo;
   text-transform: uppercase;
-  font-size: 18px;
+  @include tipo-1(18);
   line-height: 20px;
   font-weight: bold;
   letter-spacing: 0.05em;
@@ -97,10 +96,8 @@
 .form label {
   display: block;
   color: $white;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 18px;
-  line-height: 25px;
   margin-bottom: 4px;
+  @include tipo-2(18);
 }
 
 .form input {
@@ -112,8 +109,8 @@
   padding: 7px 10px;
   margin-bottom: 13px;
   outline: none;
-  font-size: 14px;
-  font-family: Georgia, "Times New Roman", serif;
+  @include tipo-2(14);
+  line-height: normal;
 }
 
 .form textarea {
@@ -126,8 +123,7 @@
   padding: 7px 10px;
   margin-bottom: 20px;
   outline: none;
-  font-size: 14px;
-  font-family: Georgia, "Times New Roman", serif;
+  @include tipo-2(14);
 }
 
 .form button {
@@ -140,8 +136,7 @@
 }
 
 .orcamento_dados h3 {
-  font-size: 18px;
-  line-height: 25px;
+  @include tipo-1(18);
   text-transform: uppercase;
   color: $amarelo;
   font-weight: bold;
@@ -149,9 +144,8 @@
 
 .orcamento_dados span {
   display: block;
-  font-size: 18px;
+  @include tipo-2(18);
   line-height: 30px;
-  font-family: Georgia, "Times New Roman", serif;
 }
 
 .orcamento_dados span:nth-of-type(2) {
@@ -163,9 +157,9 @@
 }
 
 .orcamento_dados ul li {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 14px;
   padding: 10px 15px;
+  @include tipo-2(14);
+  line-height: normal;
 }
 
 .orcamento_dados ul li:nth-child(odd) {
