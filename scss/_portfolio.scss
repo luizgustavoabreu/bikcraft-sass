@@ -18,6 +18,7 @@
 
 .quote_clientes cite {
   @include tipo-1(18);
+  line-height: normal;
   font-weight: bold;
   text-align: right;
   float: right;
