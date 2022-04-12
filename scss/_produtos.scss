@@ -17,6 +17,14 @@
   top: -175px;
   text-align: center;
   margin-bottom: -56px;
+  @include d(t) {
+    top: -150px;
+    margin-bottom: -56px;
+  }
+  @include d(m) {
+    top: -100px;
+    margin-bottom: -68px;
+  }
 }
 
 .produto_item h2:after,
@@ -32,6 +40,12 @@
 .produto_icone {
   background: $black;
   padding: 70px 0;
+  @include d(t) {
+    padding: 41px 0;
+  }
+  @include d(m) {
+    padding: 41px 0;
+  }
 }
 
 .produto_icone img {
@@ -47,6 +61,16 @@
   @include tipo-1(18);
   height: 180px;
   padding: 30px 40px;
+  @include d(t) {
+    @include tipo-1(14);
+    height: 122px;
+    padding: 20px 30px;
+  }
+  @include d(m) {
+    @include tipo-1(14);
+    height: auto;
+    padding: 20px 30px;
+  }
 }
 
 .produto_info ul li {
@@ -61,6 +85,16 @@
   height: 49px;
   text-align: center;
   padding-top: 16px;
+  @include d(t) {
+    width: 181px;
+    height: 49px;
+  }
+  @include d(m) {
+    width: 149px;
+    height: 49px;
+    @include tipo-1(14);
+    padding-top: 14px;
+  }
 }
 
 .produto_info ul li:nth-child(1),
@@ -91,6 +125,9 @@
 
 .form {
   padding-right: 60px;
+  @include d(m) {
+    padding-right: 0px;
+  }
 }
 
 .form label {
@@ -154,6 +191,9 @@
 
 .orcamento_dados ul {
   padding-right: 60px;
+  @include d(m) {
+    padding-right: 0px;
+  }
 }
 
 .orcamento_dados ul li {
